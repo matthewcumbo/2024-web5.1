@@ -1,0 +1,26 @@
+.mainTitle{
+    color:red;
+}
+
+.themeColour{
+    color:#1d8165;
+}
+
+.paragraphClass{
+    color:#3e6d96;
+    font-weight: bold;
+}
+
+p{
+    background-color: #c1c1c1;
+    font-size: 20px;
+}
+
+body{
+    background-color: coral;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.imageSize{
+    height: 200px;
+}
