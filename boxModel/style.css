@@ -1,8 +1,25 @@
+/* CSS Reset */
+*{
+    /* Margin is spacing on the outside of the border */
+    margin: 0;
+    /* Padding is spacing on the inside of the border */
+    padding: 0;
+}
+
 div{
+    /* 
+        Box sizing can be used to manipulate how divs and other elements
+        behave in terms of sizing, spacing, and borders. 
+    */
     box-sizing: border-box;
 }
 
 .box{
+    /* border property is shorthand for the following
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+    */
     border:1px #000000 solid; 
     padding: 20px;
 }

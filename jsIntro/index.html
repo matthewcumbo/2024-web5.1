@@ -30,15 +30,18 @@
         helloWorld();
         helloWorld();
 
-
+        // Some functions might require a parameter (a variable value)
         helloUser('Matt');
         helloUser('Matthew');
 
+        // We can capture a function's returned value into a variable
+        // This variable can then be used for other things
         let result = add(5,2);
         result = add(result, 7);
         console.log(result);
     </script>
 
+<!-- When a button is clicked, we can trigger a JS function -->
 <button onclick="hi('Matt');" >Click Me!</button>
 
 </body>

@@ -1,26 +1,66 @@
+<!-- 
+ To create the base structure of the HTML page,
+ Type in ! and then press Enter/Return.
+ -->
+
+ <!-- Defines the HTML version we're using. -->
 <!DOCTYPE html>
+
+<!-- Specifies the language of the document. -->
 <html lang="en">
+
+<!-- Page metadata (properties about the page),
+    most of this information is not visible to the user. -->
 <head>
+    <!-- 
+        The character encoding of this page.
+        UTF-8 is encrouaged because it includes 
+        all characters used in the world.
+    -->
     <meta charset="UTF-8">
+    
+    <!-- Viewport sets up the size of the web page, 
+     based on the size of the window/device. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title of this document that appears on the Browser tab. -->
     <title>First Example</title>
+
+    <!-- Link to our CSS style sheet. -->
     <link rel="stylesheet" href="Style.css">
 </head>
+
+<!-- Page body - this is what the user will see. -->
 <body>
+    <!-- 
+        Most HTML elements require an opening tag (e.g. <p>) 
+        and closing tag (e.g. </p>)
+    -->
 
-    <h1>Modified this file for GitHub example</h1>
-    <p>Addin a new update through GH Desktop</p>
-
-    <a href="page2.html">Go to Second Page</a>
-    
+    <!-- The H1 tag defines a hierarchical heading. -->
     <h1 class="mainTitle">Title</h1>
+    
+    <!-- Sub Heading -->
     <h2>Sub Title</h2>
+    
+    <!-- H3-H6 set up lower priority headings -->
     <h3>h3</h3>
     <h4>h4</h4>
     <h5>h5</h5>
     <h6>h6</h6>
 
+    <!-- 
+        a stands for Anchor: 
+        links to other pages
+    -->
+    <a href="page2.html">Go to Second Page</a>
+
+    <!-- p stands for paragraph -->
     <p class="themeColour">This is my first paragraph!</p>
+    <!-- 
+        lorem ipsum can be used to create quick dummy text, 
+        used for layout planning while we still do not have the final text
+    -->
     <p class="paragraphClass">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis hic tenetur ea facere explicabo aliquid, omnis porro at, odit dolorum perferendis tempore quae debitis nulla. Ut aspernatur adipisci nam modi.
     </p>

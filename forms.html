@@ -6,8 +6,9 @@
     <title>Forms</title>
 </head>
 <body>
-    
+    <!-- UL: Unordered List (Bulleted List) -->
     <ul>
+        <!-- LI: List Item (each separate bullet) -->
         <li>
             <a href="https://www.google.com/">Google</a>
         </li>
@@ -22,6 +23,11 @@
         </li>
     </ul>
     
+    <!-- 
+        Forms are used to submit data.
+        Setting the action to a mailto will launch the default
+        mailing application on the user's device
+    -->
     <form 
         action="mailto:asdf@qwerty.com"
         method="post"
@@ -31,7 +37,13 @@
             <legend>Personal Details</legend>
             
             <div>
+                <!-- Labels are used to explan what the next control is. -->
                 <label for="firstName">First Name</label>
+                <!-- 
+                    Inputs are used to allow the used to input something.
+                    Using a different type will allow us to use things like:
+                    Checkboxes, Radio Buttons, Passwords, etc
+                -->
                 <input type="text" id="firstName" name="firstName" placeholder="Joe">
             </div>
             
@@ -88,6 +100,7 @@
 
             <div>
                 <label for="department">Department</label>
+                <!-- Select is used for Drop Down Lists -->
                 <select name="department" id="department">
                     <option value="" disabled selected>Please select department</option>
                     <option value="1">Customer Support</option>
@@ -102,6 +115,10 @@
 
             <div>
                 <label for="message">Message</label>
+                <!-- 
+                TextAreas are just a bigger input field, 
+                with multiple rows
+                -->
                 <textarea name="message" id="message" 
                 placeholder="I have a problem with my account..."
                 cols="30" rows="10"></textarea>

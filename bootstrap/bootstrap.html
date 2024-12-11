@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Introduction</title>
     
+    <!-- 
+        We can link to multiple Style Sheets within the same HTML page.
+        Here we are also adding the Bootstrap CSS file to allow 
+        us to use Bootstrap's styling system (classes).
+
+        Then we link to our own file, so that we can override
+        certain things from Bootstrap with our own styling.
+    -->
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -366,6 +374,15 @@
         </div>
     </div>
 
-    <script src="bootstrap.js"></script>
+    <!-- 
+        We always need to link the Bootstrap JS code.
+        This allows us to use the interactive elements, 
+        such as Drop Down Menus, Carousels, etc
+
+        The best file to use is the minified bundle.
+        This includes all the necessary functionality,
+        but is smaller in size than the non-minified version.
+    -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* CSS Reset */
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -5,6 +6,12 @@
 }
 
 body{
+    /* 
+        If the user's device cannot display Arial, then Helvetica is used.
+        If Helvetica cannot be displayed, sans-serif is used. 
+        This fallback system makes sure that the user can still see 
+        our text in a font that is similar to what we intend.
+    */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,13 +25,18 @@ body{
 
 .flexBox{
     width: 100%;
+    /* 
+        The flexible box system allows us to set up 
+        our divs in a easier way and more flexible 
+        based on the user's device.
+    */
     display: flex;
     justify-content: center;
 }
 
 .menu{
-flex:1;
-background-color: #ccc;
+    flex:1;
+    background-color: #ccc;
 }
 
 .menu a {

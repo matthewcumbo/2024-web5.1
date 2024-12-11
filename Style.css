@@ -1,3 +1,10 @@
+/* 
+Classes are created in CSS to be used wherever we need in our HTML
+Their name starts with a .
+
+Anything within the { } are properties that the class will apply.
+*/
+
 .mainTitle{
     color:red;
 }
@@ -11,11 +18,13 @@
     font-weight: bold;
 }
 
+/* This selector targets all paragraphs in a page that uses this CSS file */
 p{
     background-color: #c1c1c1;
     font-size: 20px;
 }
 
+/* This targets the body, i.e. the entire page */
 body{
     background-color: coral;
     font-family:Arial, Helvetica, sans-serif;
