@@ -7,13 +7,39 @@ function validate(){
     // IF Condition to check if user value is empty
     if (firstName == ""){
         errors = errors + "<li>Please enter First Name</li>";
+        document.getElementById("firstName").classList.add("inputError");
+    }
+    else{
+        document.getElementById("firstName").classList.remove("inputError");
     }
 
     let lastName = document.getElementById("lastName").value;
 
     if (lastName == ""){
         errors = errors + "<li>Please enter Last Name</li>";
+        document.getElementById("lastName").classList.add("inputError");
     }
+
+
+
+
+    let age = document.getElementsByName('age');
+    let ageSelected = false;
+    for(let i = 0; i < age.length; i++){
+        if(age[i].checked){
+            ageSelected = true;
+        }
+    }
+    if (!ageSelected){
+        errors = errors + "<li>Please select Age Group</li>";
+    }
+
+
+
+
+
+
+
 
     // If we have ANY errors, add them to the HTML list and show it
     if (errors != ""){

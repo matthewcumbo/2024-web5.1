@@ -2,3 +2,13 @@
 .hidden{
     display: none;
 }
+
+.inputError{
+    border:1px #9c1313 solid;
+    background-color: #f29494;
+    color:#9c1313;
+}
+
+.inputError::placeholder{
+    color:#7e4141;
+}
